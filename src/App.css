@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Montserrat');
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-logo {
