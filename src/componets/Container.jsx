@@ -318,7 +318,7 @@ const Container = () => {
                     }
                     {paneState[2] && (taskList.length > 0) && (taskList.filter(task => task.status == 'completed').length > 0) && (
                         <div className='deleteAll-btn'>
-                            <button onClick={() => { setTaskList([]); localStorage.setItem('taskList', []) }}><span><DeleteIcon /></span> Delete All</button>
+                            <button onClick={() => { setTaskList([]); localStorage.setItem('taskList', JSON.stringify([])) }}><span><DeleteIcon /></span> Delete All</button>
                         </div>
                     )
                     }
